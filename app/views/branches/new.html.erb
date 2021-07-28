@@ -1,8 +1,6 @@
-
 <%if logged_in?%>
   <h1> Add Branch </h1>
-
-  <%= form_with(model: @branch) do |f| %>
+  <%= form_with(model: @branch, url: hotel_branches_path) do |f| %>
       <% if @branch.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@branch.errors.count, "error") %> prohibited this branch from being saved:</h2>

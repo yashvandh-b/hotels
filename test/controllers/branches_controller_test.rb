@@ -2,7 +2,6 @@ require "test_helper"
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
 
-
     setup do
         @branch = branches(:one)
     end
